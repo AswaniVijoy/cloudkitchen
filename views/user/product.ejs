@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/user/product.css" />
+  </head>
+  <body>
+    <!--  product   -->
+    <div class="container product-container">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="dish1" src="<%= product.image %>" alt="Food Image" />
+        </div>
+        <div class="col-md-6 product-info">
+          <form action="<%= product.id %>" method="post">
+            <center><h2><%= product.name %></h2></center>
+            <br />
+            <p><%= product.description %></p>
+            <p><strong>Ingredients:</strong><%= product.ingredients %></p>
+            <p><strong>Price:</strong> <%= product.price %></p>
+
+            <!-- Quantity Input -->
+
+            <div class="form-group">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                class="form-control"
+                name="quantity"
+                id="quantity"
+                value="1"
+                min="1"
+              />
+            </div>
+
+            <!-- Order Button -->
+            <button class="btn btn-primary btn-block">Order Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--  FOOTER   -->
+
+    <footer>
+      <p>2024 Communty kitchen. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js (optional) -->
+    <script>
+      function openAbout() {
+        document.getElementById("about").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("about").style.width = "0%";
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

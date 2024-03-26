@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link href="/stylesheets/user/profile.css" rel="stylesheet">
+</head>
+<body>
+  <div class="profile">
+    <div class="profile-header">
+     <center><h1>User Profile</h1></center>
+      
+    </div>
+    <div class="profile-details" id="profileDetails">
+      <img src="/images/anime-food.gif" alt="User Profile Picture">
+      <h2>Name: <%= profile.name %></h2>
+      <p>Email: <%= profile.email %></p>
+      <p>Phone: <%= profile.phone %></p>
+      <p>Address : <%= profile.address %></p>
+      <p>Pincode :<%= profile.pincode %></p>
+    </div>
+    <div class="edit-profile" id="editProfile" style="display: none;">
+      <form action="profile" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= profile.name %>"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="<%= profile.email %>"><br><br>
+        <label for="location">Phone:</label>
+        <input type="text" id="location" name="phone" value="<%= profile.phone %>"><br><br>
+        <label for="location">Adress:</label>
+        <textarea name="address" id="" cols="30" rows="5"><%= profile.address %></textarea>
+        <label for="location">Pincode:</label>
+        <input type="text" id="location" name="pincode" value="<%= profile.pincode %>"><br><br>
+        <button type="submit" class="save-button">Save</button>
+
+      </form>
+    </div>
+  </div>
+<center><button class="edit-button" onclick="toggleEdit()">Edit Profile</button></center>
+  <script src="/javascript/profile.js"></script>
+</body>
+</html>

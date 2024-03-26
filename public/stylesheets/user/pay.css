@@ -1,0 +1,38 @@
+body {
+    background-color: #d8c5c5;
+}
+img{
+    height: 50%;
+    width: 100%;
+}
+div.col-md-6:nth-child(2) > div:nth-child(1) {
+    margin-bottom: 0px;
+    margin-top: 150px;
+    margin-left: -416px;
+  }
+  
+.payment-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn:not(:disabled):not(.disabled) {
+cursor:pointer;
+background-color: #9f2b2b;
+}
+@media(max-width: 600px){
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    div.col-md-6:nth-child(2) {
+        margin-right: 0px;
+        margin-left: 430px;
+        margin-bottom: 0px;
+        margin-top: -120px;
+      }
+      
+}

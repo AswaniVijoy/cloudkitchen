@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering - Orders</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/stylesheets/user/orders.css" rel="stylesheet" >
+</head>
+
+<body>
+<center><img src="/images/map.gif" alt=""></center>
+
+
+  <!-- Orders Container -->
+  <div class="container orders-container">
+    <h1 class="text-center" style="font-weight: bolder;">My Orders</h1>
+
+    <% if (orders.length==0) { %>
+      <h3 class="text-center">No Orders</h3>
+     <% }else{ %>
+ 
+     <!-- Order Item 1 -->
+     <% for( let i = 0; i < orders.length; i++ ) { %>
+    
+    
+    <div class="order-item" style="margin-bottom: 20px;">
+      <h4><p>Items: <%= orders[i].dataValues.order %></p>
+        <p>Price: <%= orders[i].dataValues.price %></p>
+        <p>Quantity: <%= orders[i].dataValues.quantity %></p>
+      <p>Total: <%= orders[i].dataValues.total %></p>
+      <p>Status: <%= orders[i].dataValues.status %></p></h4>
+      <% if (orders[i].dataValues.status == "Processing") { %>
+        <a href="orders/<%= orders[i].dataValues.id  %>/cancel" class="btn btn-primary" style="margin-left: 20px;">cancel</a>
+      <% } %>
+
+    </div>
+    <% } %>
+    <% } %>
+<br>
+    <!-- Order Item 2 -->
+    
+
+    <!-- Add more order items as needed -->
+
+  </div>
+  <center>
+    <a href="/user/<%= id %>/dashboard"><button class="exit">EXIT</button></a>
+  </center>
+    <!--  FOOTER   -->
+
+    <footer>
+        <p> 2024 Communty kitchen. All rights reserved.</p>
+      </footer>
+
+<!-- Bootstrap JS and Popper.js (optional) -->
+<script>
+function openAbout() {
+document.getElementById("about").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("about").style.width = "0%";
+}
+</script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+

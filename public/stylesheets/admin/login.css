@@ -1,0 +1,20 @@
+body {
+    background-color: #9f2b2b;
+}
+.login-form {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn{
+    border-radius:10px;
+    background-color: #9f2b2b;
+}
+.btn:hover {
+    background-color:#a38888;
+    color: #fff;
+    border-radius: 10px;
+}

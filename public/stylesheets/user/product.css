@@ -1,0 +1,157 @@
+body {
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px;
+}
+.dish1 {
+    margin-left: 98px;
+    margin-top: 43px;
+  }
+  
+
+    /* product */
+
+    .product-container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 80px;
+    }
+    body > footer:nth-child(2) {
+        margin-top: 160px;
+        margin-bottom: 0px;
+      }
+      
+    
+
+      
+
+
+    img {
+        max-width: 400px;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        margin-top: 20px;
+    }
+
+    /* Styling for a food ordering website */
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        background-color: #9f2b2b;
+        border-color: #9f2b2b;
+    }
+
+    .btn-primary:hover {
+        background-color: #b76562;
+        border-color: #944542;
+    }
+
+    /* about */
+
+.about{
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    }
+    .about a{
+    padding: 60px;
+    text-align: right;
+    text-decoration: none;
+    font-size: 36px;
+    color: red;
+    display: block;
+    transition: 0.3s;
+    }
+    .about a:hover, .about a:focus{
+    color:#f1f1f1;
+    
+    }
+    .about .closebtn{
+    position:abosolute;
+    top:20px;
+    right:45px;
+    font-size: 60px;
+    
+    }
+    .about a .closebtn{
+    color:white;
+    }
+    
+    .about-overlay h1{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    
+    }
+    .about-overlay p{
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    
+    }
+    body > footer:nth-child(2) {
+        margin-top: 200px;
+      }
+      
+    
+    @media screen and (max-width: 600px) {
+    /* Responsive styles for smaller screens */
+    .dish1 {
+        margin-bottom: 0px;
+        margin-top: 10%;
+        margin-left: 0px;
+      }
+      img{
+        width: 100%;
+      }
+    
+    .about a {
+    padding: 20px;
+    font-size: 24px;
+    }
+    
+    .about-overlay h1 {
+    font-size: 30px;
+    }
+    
+    .about-overlay p {
+    font-size: 16px;
+    }
+    
+    }
+    
+     /* footer  */
+     footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+    }
+
+   
